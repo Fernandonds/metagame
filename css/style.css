@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    max-width: 1460px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER */
+
+header{
+    background-color: #66A3BB;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1em;
+}
+
+.logo img{
+    height: 50px;
+    padding: 2%;
+
+}
+
+.menu-icon{
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu a, .menu-mobile a{
+    text-decoration: none;
+    color: #253A47;
+    padding: 0 8px 5px 8px;
+}
+
+.fa-sort-down{
+    position: relative;
+    bottom: 2px;
+    margin-left: 5px;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+/* BODY */
+
+body{
+    background-color: #D8E6F0; /*BACKGROUD */
+}
+
+.container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2%;
+}
+.box-articles{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 30%;
+    margin-top: 15px;
+}
+
+.box img{
+    width: 100%;
+}
+
+.box h3{
+    text-align: center;
+    padding: 1%;
+}
+
+.box p{
+    text-align: left;
+    font-size: 0.8em;
+}
+
+.btn-articles{
+    width: 90px;  
+    height: 30px;  
+    background-color: #66A3BB;
+    border-radius: 30px;
+    color: #253A47;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px auto 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+.border-bottom{
+    border-bottom: 1px solid #253A47;
+    margin: 20px 0 20px 0;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #66A3BB;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: #253A47;
+}
+
+
+
+@media (max-width: 900px){
+    
+    header{
+        justify-content: space-between;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    
+    .menu{
+        display: none;
+    }
+
+    .menu-icon{
+        display:flex;
+        align-items: center;
+    }
+
+    .menu-mobile{
+        display: none;
+        flex-direction: column;
+        background-color: #54879b;
+    }
+
+    .menu-mobile a{
+        padding: 1%;
+        border-bottom: 1px solid #253A47 ;
+        width: 100%;
+        text-align: center;
+        color: #253A47 ;
+        font-weight: 600;
+    }
+
+
+
+}
